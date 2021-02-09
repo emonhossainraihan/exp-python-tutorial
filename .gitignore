@@ -1,3 +1,6 @@
 __pycache__
 *.pdf
-
+files
+modules
+.vscode
+testing.py 

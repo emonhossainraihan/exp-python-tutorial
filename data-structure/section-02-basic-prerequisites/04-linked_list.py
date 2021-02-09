@@ -31,12 +31,12 @@ class linked_list:
 		while cur_node.next!=None:
 			cur_node=cur_node.next
 			elems.append(cur_node.data)
-		print elems
+		print(elems)
 
 	# Returns the value of the node at 'index'. 
 	def get(self,index):
 		if index>=self.length() or index<0: # added 'index<0' post-video
-			print "ERROR: 'Get' Index out of range!"
+			print("ERROR: 'Get' Index out of range!")
 			return None
 		cur_idx=0
 		cur_node=self.head
@@ -48,7 +48,7 @@ class linked_list:
 	# Deletes the node at index 'index'.
 	def erase(self,index):
 		if index>=self.length() or index<0: # added 'index<0' post-video
-			print "ERROR: 'Erase' Index out of range!"
+			print("ERROR: 'Erase' Index out of range!")
 			return 
 		cur_idx=0
 		cur_node=self.head
@@ -92,7 +92,7 @@ class linked_list:
 	# list the 'node' will be appended.
 	def insert_node(self,index,node):
 		if index<0:
-			print "ERROR: 'Erase' Index cannot be negative!"
+			print("ERROR: 'Erase' Index cannot be negative!")
 			return
 		if index>=self.length(): # append the node
 			cur_node=self.head
@@ -117,7 +117,7 @@ class linked_list:
 	# to the user.
 	def set(self,index,data):
 		if index>=self.length() or index<0:
-			print "ERROR: 'Set' Index out of range!"
+			print("ERROR: 'Set' Index out of range!")
 			return
 		cur_node=self.head
 		cur_idx=0
